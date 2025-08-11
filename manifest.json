@@ -3,7 +3,7 @@
   "name": "Typewriter Scroll",
   "version": "0.1.0",
   "minAppVersion": "0.15.0",
-  "description": "Typewriter-style scroll padding for focused writing.",
+  "description": "Typewriter Scroll lets you set custom top and bottom scroll padding in the editor, so your active line always stays in focus—just like a typewriter. Perfect for distraction-free, focused writing in Obsidian.",
   "author": "dmo-code",
   "authorUrl": "",
   "isDesktopOnly": false
