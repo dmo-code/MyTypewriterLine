@@ -2,26 +2,26 @@
 import { App, Plugin, PluginSettingTab, Setting, TextComponent } from "obsidian";
 
 
-interface TypewriterScrollSettings {
+interface MyTypewriterLineSettings {
 	scrollPaddingTop: string;
 	scrollPaddingBottom: string;
 }
 
 
-const DEFAULT_SETTINGS: TypewriterScrollSettings = {
+const DEFAULT_SETTINGS: MyTypewriterLineSettings = {
 	scrollPaddingTop: "40",
 	scrollPaddingBottom: "60"
 };
 
-class TypewriterScrollSettingTab extends PluginSettingTab {
+class MyTypewriterLineSettingTab extends PluginSettingTab {
 	       // Standardwerte für das Plugin
 	       private readonly defaultSettings = {
 		       scrollPaddingTop: "40",
 		       scrollPaddingBottom: "60"
 	       };
-       plugin: TypewriterScrollPlugin;
+       plugin: MyTypewriterLinePlugin;
 
-       constructor(app: App, plugin: TypewriterScrollPlugin) {
+       constructor(app: App, plugin: MyTypewriterLinePlugin) {
 	       super(app, plugin);
 	       this.plugin = plugin;
        }
@@ -91,13 +91,13 @@ class TypewriterScrollSettingTab extends PluginSettingTab {
 			}
 }
 
-export default class TypewriterScrollPlugin extends Plugin {
-	settings!: TypewriterScrollSettings;
+export default class MyTypewriterLinePlugin extends Plugin {
+	settings!: MyTypewriterLineSettings;
 	styleEl: HTMLStyleElement | null = null;
 
        async onload() {
 	       await this.loadSettings();
-	       this.addSettingTab(new TypewriterScrollSettingTab(this.app, this));
+	       this.addSettingTab(new MyTypewriterLineSettingTab(this.app, this));
 	       this.applyCss();
        }
 
