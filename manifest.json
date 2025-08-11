@@ -1,0 +1,10 @@
+{
+  "id": "my-css-plugin",
+  "name": "My CSS Plugin",
+  "version": "0.1.0",
+  "minAppVersion": "0.15.0",
+  "description": "Fügt dynamisch CSS mit einstellbaren Parametern ein.",
+  "author": "dmo-code",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}
