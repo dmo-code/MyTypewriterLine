@@ -1,6 +1,7 @@
-# Typewriter Scroll
 
-Typewriter Scroll is an Obsidian plugin that lets you set custom top and bottom scroll padding in the editor, so your active line always stays in focus—just like a typewriter. Perfect for distraction-free, focused writing.
+# My Typewriter Line
+
+My Typewriter Line is an Obsidian plugin that lets you set custom top and bottom scroll padding in the editor, so your active line always stays in focus—just like a typewriter. Perfect for distraction-free, focused writing.
 
 ## Features
 
@@ -15,7 +16,7 @@ Typewriter Scroll is an Obsidian plugin that lets you set custom top and bottom 
 ### From Obsidian Community Plugins
 
 1. Open Obsidian and go to **Settings → Community plugins**.
-2. Click on **Browse** and search for `Typewriter Scroll`.
+2. Click on **Browse** and search for `My Typewriter Line`.
 3. Click **Install** and then **Enable**.
 
 ### Manual Installation
@@ -28,7 +29,7 @@ Typewriter Scroll is an Obsidian plugin that lets you set custom top and bottom 
 
 ## Usage
 
-1. Go to **Settings → Typewriter Scroll**.
+1. Go to **Settings → My Typewriter Line**.
 2. Adjust the **Top scroll position (vh)** and **Bottom scroll position (vh)** to your liking. The sum must always be 100.
 3. Your active line will now stay at your preferred vertical position while you type.
 
@@ -36,7 +37,7 @@ Typewriter Scroll is an Obsidian plugin that lets you set custom top and bottom 
 
 ## Example
 
-![Typewriter Scroll Example](https://raw.githubusercontent.com/dmo-code/myWriteLine/main/.github/typewriter-scroll-demo.gif)
+![My Typewriter Line Example](https://raw.githubusercontent.com/dmo-code/myWriteLine/main/.github/typewriter-scroll-demo.gif)
 
 ---
 
