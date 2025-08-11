@@ -73,21 +73,42 @@ export default class MyCssPlugin extends Plugin {
 		this.applyCss();
 	}
 
-	applyCss() {
-		const css = `
-			body {
-				--myplugin-color: ${this.settings.color};
-				--myplugin-font-size: ${this.settings.fontSize};
+		applyCss() {
+			const css = `
+				body {
+					--myplugin-color: ${this.settings.color};
+					--myplugin-font-size: ${this.settings.fontSize};
+				}
+				.myplugin-demo {
+					color: var(--myplugin-color);
+					font-size: var(--myplugin-font-size);
+				}
+
+				/* Typewriter-Scrolling: universell für iPhone, iPad, Mac und PC */
+				.markdown-source-view.mod-cm6.is-live-preview .cm-scroller,
+				.markdown-source-view.mod-cm6 .cm-scroller,
+				.markdown-source-view .cm-scroller,
+				.workspace-leaf-content .cm-scroller {
+					scroll-padding-top: 40vh !important;
+					scroll-padding-bottom: 60vh !important;
+					scroll-behavior: smooth;
+				}
+
+				/* Optional: Feintuning für sehr kleine Bildschirme (iPhone) */
+				@media (max-height: 700px) {
+					.markdown-source-view.mod-cm6.is-live-preview .cm-scroller,
+					.markdown-source-view.mod-cm6 .cm-scroller,
+					.markdown-source-view .cm-scroller {
+						scroll-padding-top: 45vh !important;
+						scroll-padding-bottom: 45vh !important;
+						scroll-behavior: smooth;
+					}
+				}
+			`;
+			if (!this.styleEl) {
+				this.styleEl = document.createElement("style");
+				document.head.appendChild(this.styleEl);
 			}
-			.myplugin-demo {
-				color: var(--myplugin-color);
-				font-size: var(--myplugin-font-size);
-			}
-		`;
-		if (!this.styleEl) {
-			this.styleEl = document.createElement("style");
-			document.head.appendChild(this.styleEl);
+			this.styleEl.textContent = css;
 		}
-		this.styleEl.textContent = css;
-	}
 }
