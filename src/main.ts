@@ -2,29 +2,29 @@
 import { App, Plugin, PluginSettingTab, Setting, TextComponent } from "obsidian";
 
 
-interface MyPluginSettings {
+interface TypewriterScrollSettings {
 	scrollPaddingTop: string;
 	scrollPaddingBottom: string;
 }
 
 
-const DEFAULT_SETTINGS: MyPluginSettings = {
+const DEFAULT_SETTINGS: TypewriterScrollSettings = {
 	scrollPaddingTop: "40",
 	scrollPaddingBottom: "60"
 };
 
-class MyPluginSettingTab extends PluginSettingTab {
+class TypewriterScrollSettingTab extends PluginSettingTab {
 	       // Standardwerte für das Plugin
 	       private readonly defaultSettings = {
 		       scrollPaddingTop: "40",
 		       scrollPaddingBottom: "60"
 	       };
-	plugin: MyCssPlugin;
+       plugin: TypewriterScrollPlugin;
 
-	constructor(app: App, plugin: MyCssPlugin) {
-		super(app, plugin);
-		this.plugin = plugin;
-	}
+       constructor(app: App, plugin: TypewriterScrollPlugin) {
+	       super(app, plugin);
+	       this.plugin = plugin;
+       }
 
 			display(): void {
 				const { containerEl } = this;
@@ -91,15 +91,15 @@ class MyPluginSettingTab extends PluginSettingTab {
 			}
 }
 
-export default class MyCssPlugin extends Plugin {
-	settings!: MyPluginSettings;
+export default class TypewriterScrollPlugin extends Plugin {
+	settings!: TypewriterScrollSettings;
 	styleEl: HTMLStyleElement | null = null;
 
-	async onload() {
-		await this.loadSettings();
-		this.addSettingTab(new MyPluginSettingTab(this.app, this));
-		this.applyCss();
-	}
+       async onload() {
+	       await this.loadSettings();
+	       this.addSettingTab(new TypewriterScrollSettingTab(this.app, this));
+	       this.applyCss();
+       }
 
 	onunload() {
 		if (this.styleEl && this.styleEl.parentNode) {
