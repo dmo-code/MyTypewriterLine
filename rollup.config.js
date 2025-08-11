@@ -3,7 +3,7 @@ const { nodeResolve } = require('@rollup/plugin-node-resolve');
 const copy = require('rollup-plugin-copy');
 
 module.exports = {
-  input: 'main.ts',
+  input: 'src/main.ts',
   output: {
     dir: 'dist',
     format: 'cjs',
