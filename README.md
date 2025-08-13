@@ -1,5 +1,15 @@
 # My Typewriter Line
 
+![Obsidian Plugin](https://img.shields.io/badge/Obsidian%20Plugin-Community-purple?logo=obsidian)
+
+# My Typewriter Line
+
+![Version](https://img.shields.io/github/package-json/v/dmo-code/myWriteLine?label=version)
+![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+![Open Issues](https://img.shields.io/github/issues-raw/dmo-code/myWriteLine?label=open%20issues)
+![Stars](https://img.shields.io/github/stars/dmo-code/myWriteLine?style=social)
+![Total Downloads](https://img.shields.io/github/downloads/dmo-code/myWriteLine/total?label=downloads)
+
 My Typewriter Line is an Obsidian plugin that lets you set custom top and bottom scroll padding in the editor, so your active line always stays in focus—just like a typewriter. Perfect for distraction-free, focused writing.
 
 ## Features
@@ -36,7 +46,12 @@ My Typewriter Line is an Obsidian plugin that lets you set custom top and bottom
 
 ## Example
 
-![My Typewriter Line Example](https://raw.githubusercontent.com/dmo-code/myWriteLine/main/.github/typewriter-scroll-demo.gif)
+![Example](img/image.png)
+
+---
+
+## Setup
+![Plugin Setup](img/setup.png)
 
 ---
 
