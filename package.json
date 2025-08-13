@@ -1,7 +1,7 @@
 {
-  "name": "my-css-plugin",
+  "name": "my-typewriter-line",
   "version": "1.0.1",
-  "description": "Obsidian Plugin mit dynamischem CSS und Einstellungen",
+"description": "Obsidian plugin with dynamic CSS and settings",
   "main": "main.js",
   "scripts": {
     "build": "rollup -c"
