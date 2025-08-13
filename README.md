@@ -36,7 +36,12 @@ My Typewriter Line is an Obsidian plugin that lets you set custom top and bottom
 
 ## Example
 
-![My Typewriter Line Example](https://raw.githubusercontent.com/dmo-code/myWriteLine/main/.github/typewriter-scroll-demo.gif)
+![Example](img/image.png)
+
+---
+
+## Setup
+![Plugin Setup](img/setup.png)
 
 ---
 
