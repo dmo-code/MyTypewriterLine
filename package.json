@@ -1,6 +1,6 @@
 {
   "name": "my-css-plugin",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "Obsidian Plugin mit dynamischem CSS und Einstellungen",
   "main": "main.js",
   "scripts": {
