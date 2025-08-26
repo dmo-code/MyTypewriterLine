@@ -4,11 +4,13 @@
   "description": "Obsidian plugin with dynamic CSS and settings",
   "main": "main.js",
   "scripts": {
-    "build": "node build.js"
+    "build": "tsc",
+    "postbuild": "cpx manifest.json dist/"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@types/node": "^20.0.0",
+    "cpx": "^1.2.1",
     "obsidian": "^1.5.12",
     "rollup": "^4.0.0",
     "rollup-plugin-copy": "^3.5.0",
