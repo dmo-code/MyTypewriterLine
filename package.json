@@ -4,7 +4,9 @@
   "description": "Obsidian plugin with dynamic CSS and settings",
   "main": "main.js",
   "scripts": {
-    "build": "node build.js"
+    "build": "rollup -c",
+    "typecheck": "tsc --noEmit",
+    "postbuild": "cpx \"{manifest.json,styles.css}\" dist/"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^16.0.1",

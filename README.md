@@ -25,8 +25,8 @@ My Typewriter Line is an Obsidian plugin that lets you set custom top and bottom
 
 ### Manual Installation
 
-1. Download the latest `main.js`, `manifest.json`, and `styles.css` (if available) from the [GitHub Releases](https://github.com/dmo-code/myWriteLine/releases) page.
-2. Place these files in a new folder named `typewriter-scroll` inside your vault's `.obsidian/plugins/` directory.
+1. Download the latest `main.js`, `manifest.json`, and `styles.css` from the Releases page.
+2. Place these files in a new folder named `my-typewriter-line` inside your vault's `.obsidian/plugins/` directory.
 3. Restart Obsidian and enable the plugin in **Settings → Community plugins**.
 
 ---
@@ -64,8 +64,9 @@ If you want to build the plugin yourself:
 1. Make sure you have [Node.js](https://nodejs.org/) installed.
 2. Clone this repository.
 3. Run `npm install` to install dependencies.
-4. Run `npm run build` to generate the `main.js` file in the `dist` folder.
-5. Copy `main.js`, `manifest.json`, and (if available) `styles.css` to your Obsidian plugins folder.
+4. Run `npm run build` to generate files in the `dist` folder.  
+   The `manifest.json` and `styles.css` will be copied automatically to `dist/`.
+5. Copy `main.js`, `manifest.json`, and `styles.css` from `dist/` to your Obsidian plugins folder (`.obsidian/plugins/my-typewriter-line`).
 
 ---
 

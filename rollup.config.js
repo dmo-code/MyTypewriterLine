@@ -15,11 +15,13 @@ module.exports = {
     nodeResolve(),
     typescript({
       tsconfig: './tsconfig.json',
+      tsconfigOverride: { compilerOptions: { module: 'ESNext' } },
       useTsconfigDeclarationDir: true
     }),
     copy({
       targets: [
-        { src: 'manifest.json', dest: 'dist' }
+        { src: 'manifest.json', dest: 'dist' },
+        { src: 'styles.css', dest: 'dist' }
       ]
     })
   ]
