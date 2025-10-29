@@ -1,12 +1,11 @@
 {
   "name": "my-typewriter-line",
   "version": "1.0.1",
-  "description": "Obsidian plugin with dynamic CSS and settings",
+  "description": "Keep the active line in focus with customizable top and bottom scroll padding for typewriter-like editing.",
   "main": "main.js",
   "scripts": {
     "build": "rollup -c",
-    "typecheck": "tsc --noEmit",
-    "postbuild": "cpx \"{manifest.json,styles.css}\" dist/"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^16.0.1",
