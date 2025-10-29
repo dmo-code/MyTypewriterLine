@@ -7,9 +7,12 @@
 
 My Typewriter Line is an Obsidian plugin that lets you set custom top and bottom scroll padding in the editor, so your active line always stays in focus—just like a typewriter. Perfect for distraction-free, focused writing.
 
+> Note: This plugin exclusively provides this single function (dynamic scroll padding adjustment via slider).
+
 ## Features
 
-- Set custom top and bottom scroll padding (in vh)
+- Set custom top and bottom scroll padding (in vh) via a single horizontal slider
+- Bottom value is automatically calculated (always 100 minus top)
 - Keeps your cursor/active line centered or at your preferred position while typing
 - Simple, distraction-free writing experience
 
@@ -34,14 +37,8 @@ My Typewriter Line is an Obsidian plugin that lets you set custom top and bottom
 ## Usage
 
 1. Go to **Settings → My Typewriter Line**.
-2. Adjust the **Top scroll position (vh)** and **Bottom scroll position (vh)** to your liking. The sum must always be 100.
+2. Adjust the **Top scroll position (vh)** using the horizontal slider. The **Bottom scroll position** is automatically set so that both always add up to 100.
 3. Your active line will now stay at your preferred vertical position while you type.
-
----
-
-## Example
-
-![Example](img/image.png)
 
 ---
 
@@ -62,11 +59,11 @@ My Typewriter Line is an Obsidian plugin that lets you set custom top and bottom
 If you want to build the plugin yourself:
 
 1. Make sure you have [Node.js](https://nodejs.org/) installed.
-2. Clone this repository.
-3. Run `npm install` to install dependencies.
-4. Run `npm run build` to generate files in the `dist` folder.  
-   The `manifest.json` and `styles.css` will be copied automatically to `dist/`.
-5. Copy `main.js`, `manifest.json`, and `styles.css` from `dist/` to your Obsidian plugins folder (`.obsidian/plugins/my-typewriter-line`).
+2. Run `npm install`.
+3. Run `npm run build` to produce the build in the `dist` folder.  
+   The `manifest.json` and `styles.css` are copied to `dist/` automatically.
+4. Copy `main.js`, `manifest.json`, and `styles.css` from `dist/` to your Obsidian plugins folder:
+   `.obsidian/plugins/my-typewriter-line`.
 
 ---
 
