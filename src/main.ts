@@ -29,15 +29,11 @@ class MyTypewriterLineSettingTab extends PluginSettingTab {
 				const { containerEl } = this;
 				containerEl.empty();
 
-				// Section heading (avoid top-level h2). Fallback if setHeading is not available.
+				// Section heading (avoid top-level h2)
 				const heading = new Setting(containerEl)
 					.setName("Scrolling")
 					.setDesc("Top and bottom (vh) always add up to 100.");
-				// @ts-ignore
-				if (typeof (heading as any).setHeading === "function") {
-					// @ts-ignore
-					(heading as any).setHeading();
-				}
+				heading.setHeading?.();
 
 				let warningEl: HTMLElement | null = null;
 
