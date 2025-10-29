@@ -20,7 +20,16 @@ module.exports = {
     }),
     copy({
       targets: [
-        { src: 'manifest.json', dest: 'dist' },
+        {
+          src: 'manifest.json',
+          dest: 'dist',
+          transform: (contents) => {
+            const m = JSON.parse(contents.toString());
+            // nur für dist ergänzen
+            const out = { ...m, main: "main.js", css: "styles.css" };
+            return JSON.stringify(out, null, 2);
+          }
+        },
         { src: 'styles.css', dest: 'dist' }
       ]
     })
