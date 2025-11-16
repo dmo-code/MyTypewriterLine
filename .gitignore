@@ -16,3 +16,6 @@ Thumbs.db
 # IDE/Editor
 .vscode/
 .idea/
+
+# Root file
+/main.js
