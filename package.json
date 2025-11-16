@@ -1,6 +1,6 @@
 {
   "name": "my-typewriter-line",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Keep the active line in focus with customizable top and bottom scroll padding for typewriter-like editing.",
   "main": "main.js",
   "scripts": {
