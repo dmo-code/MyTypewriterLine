@@ -74,7 +74,7 @@ class MyTypewriterLineSettingTab extends PluginSettingTab {
 				let bottomText: import("obsidian").TextComponent | null = null;
 				new Setting(containerEl)
 					.setName("Bottom scroll position (vh)")
-					.setDesc("Automatically calculated as 100 minus Top.")
+					.setDesc("Automatically calculated as 100 minus top.")
 					.addText((text) => {
 						bottomText = text;
 						text.setValue(String(100 - topValue)).setDisabled(true);
